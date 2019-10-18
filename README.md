@@ -1,0 +1,2 @@
+# jsCodepractice
+测试JavaScript的各种属性方法的小练习加深记忆
