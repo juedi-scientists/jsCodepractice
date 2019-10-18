@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>split</title>
+    <script>
+        // split方法start
+        //  var str ="I love lvyestudy!";
+        // var arr=new Array();
+        // arr=str.split(" ");
+        // document.write(arr);
+
+        // substring截取方法练习
+        // var str1 ="利空打击看附件二";
+        // var str2=str1.substring(2,5);
+        // document.write(str2);
+
+        // 时间的获取方法
+        // var d = new Date();
+        // var myDay = d.getDate();
+        // var myMonth = d.getMonth()+1;
+        // var myYear = d.getFullYear();
+        // document.write("今天是" + myYear + myMonth + myDay);
+
+        // 时间的设置方法
+        // var d = new Date();
+        // d.setFullYear(2999,8,30);
+        // document.write(d);
+
+        // 获取时间
+        // var d = new Date();
+        // var myHours = d.getHours();
+        // var myMinutes = d.getMinutes();
+        // var mySeconds = d.getSeconds();
+        // document.write("myHours" + "myMinutes" + "mySeconds");
+
+        // 设置分
+        // var d = new Date();
+        // d.setHours(8,4,4);
+        // document.write( d);
+
+        // 将时间转换格式
+        // var b = new Date();
+        // document.write( b.toLocaleString());
+
+        // 获取星期几
+        // var d = new Date();
+        // var weekdays = new Array(7);
+        // weekdays[0] = "星期日";
+        // weekdays[1] = "星期一";
+        // weekdays[2] = "星期二";
+        // weekdays[3] = "星期三";
+        // weekdays[4] = "星期四";
+        // weekdays[5] = "星期五";
+        // weekdays[6] = "星期六";
+        // document.write("获得的下标"+d.getUTCDate());
+        // document.write(weekdays[d.getUTCDate()]);
+
+        // 数组的获取
+        // var myArr = new Array("祖国","金额","京东","查看","文库");
+        // for(var i=0;i<myArr.length;i++){
+        //     document.write(myArr[i]+"<br/>")
+        // }
+
+        //数组的截取
+        // var myArr = new Array("祖国","金额","京东","查看","文库");
+        // document.write(myArr.slice(1,3));
+
+        // 在数组开头加入元素
+        // var arr = new Array(3,3,4,5,6);
+        // document.write("现在的元素"+arr);
+        // arr.unshift(2.3,5,6);
+        // document.write("现在的元素"+arr);
+
+        // 在数组最后加入这些元素
+        // var arr = new Array(3,3,4,5,6);
+        // document.write("原来的元素"+arr+"<br/>");
+        // arr.push("de","jek", "jek");
+        // document.write(arr);
+
+        // 转换为字符串
+        // var arr = new Array(3,3,4,5,6);
+        // arr.toString();
+        // document.write(arr);
+
+        // 将元素连成一个字符串
+        // var arr = new Array(3,3,4,5,6);
+        // document.write(arr.join("%"));
+
+        // 平方根方法
+        // document.write(Math.sqrt(4));
+
+        // 多次幂
+        // document.write(Math.pow(2, 2));
+
+        // 向下取整
+        // document.write(Math.floor(3.2));
+
+        // 打开一个新窗口
+        // function open() {
+        //     window.open("http://www.lvyestudy.com ", "", "width=200,height=200,resizable");
+        // }
+        
+        // 关闭一个新窗口
+        // var newWindow = window.open("http://www.lvyestudy.com ", "", "width=200,height=200,resizable");
+        // function open(){
+        //     newWindow.close();
+        // }
+
+        // 改变尺寸
+        // function change(){
+        //     window.resizeTo(400,300);
+        // }
+        
+        // 移动窗口位置
+        // function resizeToWindow() {
+        //     window.resizeTo(200,200);
+        // }
+        // function resizeByWindow() {
+        //     window.moveBy(50,50);
+        // }
+        
+        // 定时器练习
+        var n = 5;
+        window.onload = function(){
+            setInterval(countDown, 1000);
+        }
+        function countDown(){
+            if(n>0){
+                n--;
+                document.getElementById("num").innerHTML = n;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- 打开一个新窗口 -->
+    <!-- <input id="btn" type="button" value="打开窗口" onclick="change()"/> -->
+    <!-- <input type="button" value="resizeTo" onclick="resizeToWindow()"/>
+    <input type="button" value="resizeBy" onclick="resizeByWindow()"/> -->
+
+    <!-- <a href="javascirpt:window.history.go(-1);">返回上一级</a> -->
+    <p>新年倒数：<span id="num">5</span></p>
+</body>
+</html>

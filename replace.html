@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ly">就俄欧来说看</p>
+    输入标签：<input type="text" id="tag">
+    输入文本：<input type="text" id="txt">
+    <button onclick="replace()">替换</button>
+
+    <script type="text/javascript">
+        function replace(){
+        var tag = document.getElementById("tag").value;
+        var txt = document.getElementById("txt").value;
+
+        var ly = document.getElementById("ly");
+        var e = document.createElement(tag);
+        var l = document.createTextNode(txt);
+        e.appendChild(l);
+        document.body.replaceChild(e,ly);
+        }
+    </script>
+</body>
+</html>

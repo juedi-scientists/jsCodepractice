@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="e">
+        <li>html</li>
+        <li>html</li>
+        <li>html</li>
+        <li>html</li>
+    </ul>
+    <button onclick="re()">删除</button>
+    <button onclick="add()">添加</button>
+    <script type="text/javascript">
+    var e = document.getElementById("e");
+    function re(){
+        e.removeChild(e.firstChild);
+    }
+    function add(){
+        var e = document.getElementById("e");
+        document.body.appendChild(e.cloneNode(1));
+        // 此处为复制节点再粘贴上去
+    }
+    </script>
+</body>
+</html>

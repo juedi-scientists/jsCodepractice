@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线escape加解密工具制作</title>
+    <style>
+    #btn-encrypt,#btn-decrypt{
+        height: 60px;
+    }
+    </style>
+    <script type="text/javascript">
+        function encrypt(){
+            var str=document.getElementById("txt-input").value;
+            document.getElementById("txt-ouput").value=escape(str);
+        }
+        function decrypt(){
+            var str=document.getElementById("txt-input").value;
+            document.getElementById("txt-ouput").value=unescape(str);
+        }
+    </script>
+</head>
+<body>
+    <textarea id="txt-input" cols="30"></textarea>
+    <input type="button" id="btn-encrypt" value="加密" onclick="encrypt()">
+    <input type="button" id="btn-decrypt" value="解密" onclick="decrypt()">
+    <input type="reset">
+    <textarea id="txt-ouput" cols="30"></textarea>
+</body>
+</html>

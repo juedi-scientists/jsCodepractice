@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="txt" cols="20" rows="5">绿叶学习网成立于2015年4月1日，是一个富有活力的技术学习网站。</textarea>
+    <script type="text/javascript">
+        var e = document.getElementById("txt");
+        e.oncut = function () {
+            alert("禁止剪切文本框内容！");
+            return false;
+        }
+    </script>
+</body>
+</html>

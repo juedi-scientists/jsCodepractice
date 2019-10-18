@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        // 时间选择器
+        // var n = 0;
+        // window.onload = function (){
+        //     var t = setInterval("add()",1000);
+        //     document.getElementById("btn-pause").onclick = function(){
+        //         clearInterval(t);
+        //     }
+        // }
+        // function add(){
+        //     n++;
+        //     document.getElementById("num").innerHTML = n;
+        // }
+
+        // 定时变化小练习
+        // var flag = 0;
+        // window.onload = function(){
+        //     setInterval("titleChange()",1000);
+        // }
+        // function titleChange(){
+        //     if(flag==0){
+        //         document.title = "★☆★绿叶学习网★☆★"
+        //         flag=1;
+        //     }else{
+        //         document.title = "☆★☆绿叶学习网☆★☆";
+        //         flag=0;
+        //     }
+        // }
+
+        // 遍历
+        // var t = document.getElementById("e");
+        // if(e.parentNode){
+        //     alert("有父亲");
+        // }
+
+    </script>
+</head>
+<body>
+    <p>你已经：<span id="num">0</span>缪</p>
+    <input type="button" id="btn-pause" value="暂停">
+    <input type="button" id="btn-continue" value="继续">
+
+    <ul id="ul">
+        <li id="e">dfd </li>
+        <li>df</li>
+        <li>sw</li>
+    </ul>
+
+    <script type="text/javascript">
+    var e = document.createElement("li");
+    var txt = document.createTextNode("css");
+        var w = document.getElementById("ul");
+        e.appendChild(txt);
+        w.appendChild(e);
+    </script>
+</body>
+</html>

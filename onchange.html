@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="txt" cols="30" rows="10"></textarea>
+    输入字符长度: <span id="num"></span>
+
+    <script type="text/javascript">
+    var e = document.getElementById("txt");
+    var n = document.getElementById("num");
+    e.onchange = function(){
+        var len = e.value.length;
+        n.innerText = len;
+    }
+    </script>
+</body>
+</html>
